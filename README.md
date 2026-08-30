@@ -4,7 +4,7 @@ Proyek ini adalah implementasi antarmuka **UH Database Cleaner Console** menggun
 
 ## Tampilan Application
 
-![Preview Dashboard](SS.png)
+![Preview Dashboard](SS.webp)
 
 ## Fitur & Persyaratan Teknis
 - **HTML5 Semantik**: `<header>`, `<aside>`, `<main>`, `<nav>`
