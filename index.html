@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UH Database Cleaner - Control Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Structure Utama App Dashboard -->
+    <div class="dashboard-container">
+
+        <!-- Aside: Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar__brand">
+                <img src="logo_database_cleaner.webp" alt="Logo" class="sidebar__logo">
+                <h1 class="sidebar__title">UH Cleaner</h1>
+            </div>
+
+            <!-- HTML5 Semantik: <nav> -->
+            <nav class="sidebar__nav">
+                <a href="#" class="sidebar__link sidebar__link--active">Overview</a>
+                <a href="#" class="sidebar__link">Jobs & Schedule</a>
+                <a href="#" class="sidebar__link">Database Engines</a>
+                <a href="#" class="sidebar__link">Audit Logs</a>
+                <a href="#" class="sidebar__link">Settings</a>
+            </nav>
+        </aside>
+
+        <!-- Wrapper Kanan (Header + Main Content) -->
+        <div class="main-wrapper">
+
+            <!-- HTML5 Semantik: <header> -->
+            <header class="dashboard-header">
+                <div class="dashboard-header__title">
+                    <h2>Personal Portfolio Console</h2>
+                    <p>Project Monitoring &amp; Skill Metrics</p>
+                </div>
+                <div class="dashboard-header__profile">
+                    <span class="user-badge">Admin System</span>
+                </div>
+            </header>
+
+            <!-- HTML5 Semantik: <main> -->
+            <main class="dashboard-content">
+
+                <!-- Section Statistik (Flexbox Component 1) -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-card__info">
+                            <span class="stat-card__label">Active Engine</span>
+                            <strong class="stat-card__value">PostgreSQL</strong>
+                        </div>
+                        <span class="stat-card__badge stat-card__badge--success">Online</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-card__info">
+                            <span class="stat-card__label">Target Env</span>
+                            <strong class="stat-card__value">Production</strong>
+                        </div>
+                        <span class="stat-card__badge stat-card__badge--warning">Maintenance</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-card__info">
+                            <span class="stat-card__label">Free Space</span>
+                            <strong class="stat-card__value">342.5 GB</strong>
+                        </div>
+                        <span class="stat-card__badge stat-card__badge--info">Accumulated</span>
+                    </div>
+                </div>
+
+                <!-- Section Form Eksekusi & Log Monitoring -->
+                <div class="content-grid">
+                    
+                    <!-- Form Kontrol Eksekusi Job -->
+                    <section class="panel">
+                        <h3 class="panel__title">Eksekusi Maintenance Window</h3>
+                        <form action="#" method="POST" class="cleaning-form">
+                            <div class="form-group">
+                                <label for="db_engine">Target Database Engine</label>
+                                <select id="db_engine" name="db_engine" class="form-input" required>
+                                    <option value="postgresql">PostgreSQL (Primary)</option>
+                                    <option value="mysql">MySQL / MariaDB</option>
+                                    <option value="sqlserver">SQL Server</option>
+                                    <option value="mongodb">MongoDB</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tgl_eksekusi">Jadwal Maintenance Window</label>
+                                <input type="date" id="tgl_eksekusi" name="tgl_eksekusi" class="form-input" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Scope &amp; Operations Strategy</label>
+                                <div class="radio-group">
+                                    <label class="radio-label">
+                                        <input type="radio" name="skala_paket" value="small" checked> Deduplication &amp; Index Rebuild (< 50 GB)
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="skala_paket" value="medium"> Partitioning &amp; Vacuuming (50 - 500 GB)
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="skala_paket" value="enterprise"> Cluster Optimization (> 500 GB)
+                                    </label>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn-primary">Jadwalkan Cleaning Job</button>
+                        </form>
+                    </section>
+
+                    <!-- Table Audit / Scope Breakdown -->
+                    <section class="panel">
+                        <h3 class="panel__title">Audit Log &amp; Scope Reference</h3>
+                        <div class="table-wrapper">
+                            <table class="data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Target Size</th>
+                                        <th>Cakupan Operasi</th>
+                                        <th>Estimasi SLA</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>&lt; 50 GB</td>
+                                        <td>Deduplication &amp; Index Rebuild</td>
+                                        <td>&lt; 2 Jam</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50 - 500 GB</td>
+                                        <td>Partitioning, Vacuuming &amp; Orphan Cleanup</td>
+                                        <td>2 - 6 Jam</td>
+                                    </tr>
+                                    <tr>
+                                        <td>&gt; 500 GB</td>
+                                        <td>Cluster Optimization &amp; Purging Strategy</td>
+                                        <td>Window Maintenance</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                </div>
+            </main>
+
+        </div>
+    </div>
+
+</body>
+</html>
