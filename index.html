@@ -1,156 +1,145 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UH Database Cleaner - Control Panel</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umar Hidayat</title>
+  <meta name="description" content="Landing page dan portofolio pribadi Umar Hidayat, mahasiswa S1 Ilmu Komputer yang sedang mempelajari fondasi ilmu komputer dan fokus mengejar jalur Data Engineering.">
+  
+  <meta property="og:title" content="Umar Hidayat ">
+  <meta property="og:description" content="Portofolio personal mahasiswa S1 Ilmu Komputer. Eksplorasi perjalanan belajar, eksperimen teknis, dan kontak.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=Umar+Hidayat+Portfolio">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Structure Utama App Dashboard -->
-    <div class="dashboard-container">
+  <header>
+    <h1>Umar Hidayat</h1>
+    <p>Mashasiwa S1 Ilmu Komputer Menuju Aspiring Data Engineer</p>
+    <nav>
+      <ul>
+        <li><a href="#tentang">Tentang Saya</a></li>
+        <li><a href="#fokus">Fokus & Realita</a></li>
+        <li><a href="#proyek">Proyek</a></li>
+        <li><a href="#catatan">Catatan Belajar</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Aside: Sidebar Navigation -->
-        <aside class="sidebar">
-            <div class="sidebar__brand">
-                <img src="logo_database_cleaner.webp" alt="Logo" class="sidebar__logo">
-                <h1 class="sidebar__title">UH Cleaner</h1>
-            </div>
+  <main>
 
-            <!-- HTML5 Semantik: <nav> -->
-            <nav class="sidebar__nav">
-                <a href="#" class="sidebar__link sidebar__link--active">Overview</a>
-                <a href="#" class="sidebar__link">Jobs & Schedule</a>
-                <a href="#" class="sidebar__link">Database Engines</a>
-                <a href="#" class="sidebar__link">Audit Logs</a>
-                <a href="#" class="sidebar__link">Settings</a>
-            </nav>
-        </aside>
+    <section id="tentang">
+      <h2>Tentang Saya</h2>
+      <p>
+        Saya adalah mahasiswa S1 Ilmu Komputer yang saat ini berada di tahap membangun fondasi dasar. Saya tidak mengeklaim telah menguasai bahasa pemrograman tertentu secara sempurna. Sebagian besar proyek atau eksperimen kode yang pernah saya sentuh di masa lalu telah terselesaikan, namun detail implementasinya sudah tidak saya ingat sepenuhnya.
+      </p>
+      
+      <figure>
+        <img src="Foto_Setup.webp" alt="Foto meja kerja minimalis dengan laptop untuk belajar pemrograman dan administrasi sistem" width="600" height="350">
+        <figcaption>Dokumentasi ruang kerja pribadi tempat eksplorasi kode, konfigurasi sistem, dan pembelajaran mandiri dilakukan.</figcaption>
+      </figure>
+    </section>
 
-        <!-- Wrapper Kanan (Header + Main Content) -->
-        <div class="main-wrapper">
+    <section id="fokus">
+      <h2>Fokus & Realita Belajar</h2>
+      
+      <article>
+        <h3>Jalur yang Ditempuh: Data Engineering</h3>
+        <p>
+          Meskipun masih dalam taraf berkembang, saya mengarahkan perhatian dan minat belajar saya ke bidang <strong>Data Engineering</strong>. Saya tertarik pada bagaimana data diproses, disimpan, dan dialirkan secara terstruktur.
+        </p>
+      </article>
 
-            <!-- HTML5 Semantik: <header> -->
-            <header class="dashboard-header">
-                <div class="dashboard-header__title">
-                    <h2>Personal Portfolio Console</h2>
-                    <p>Project Monitoring &amp; Skill Metrics</p>
-                </div>
-                <div class="dashboard-header__profile">
-                    <span class="user-badge">Admin System</span>
-                </div>
-            </header>
+      <article>
+        <h3>Prinsip Belajar Saya</h3>
+        <p>
+          Daripada memalsukan daftar keahlian yang panjang di CV, saya memilih untuk mencatat realita: saya sedang belajar, mengevaluasi kesalahan syntax, dan memahami arsitektur komputer dari dasar.
+        </p>
+      </article>
+    </section>
 
-            <!-- HTML5 Semantik: <main> -->
-            <main class="dashboard-content">
+    <section id="proyek">
+      <h2>Daftar Proyek</h2>
+      <p>
+        Saat ini belum ada proyek skala produksi atau portofolio besar yang siap ditampilkan. Semua eksperimen koding terdahulu dianggap sebagai latihan dasar dan telah diarsipkan.
+      </p>
+      <ul>
+        <li><em>(Belum ada proyek publik yang ditampilkan, sedang dalam proses pembentukan)</em></li>
+      </ul>
+    </section>
 
-                <!-- Section Statistik (Flexbox Component 1) -->
-                <div class="stats-grid">
-                    <div class="stat-card">
-                        <div class="stat-card__info">
-                            <span class="stat-card__label">Active Engine</span>
-                            <strong class="stat-card__value">PostgreSQL</strong>
-                        </div>
-                        <span class="stat-card__badge stat-card__badge--success">Online</span>
-                    </div>
+    <section id="catatan">
+      <h2>Catatan Perkembangan</h2>
+      <article>
+        <h3>Inisiasi Web Portofolio HTML5</h3>
+        <p>
+          Dipublikasikan pada <time datetime="2026-08-31">31 Agustus 2026</time>. Halaman ini dibangun menggunakan struktur HTML5 semantik penuh sebagai pemenuhan Tugas Rutin 1 Pemrograman Web.
+        </p>
+      </article>
+    </section>
 
-                    <div class="stat-card">
-                        <div class="stat-card__info">
-                            <span class="stat-card__label">Target Env</span>
-                            <strong class="stat-card__value">Production</strong>
-                        </div>
-                        <span class="stat-card__badge stat-card__badge--warning">Maintenance</span>
-                    </div>
+    <section id="kontak">
+      <h2>Hubungi Saya</h2>
+      <p>Kirimkan pesan pendek atau masukan melalui formulir di bawah ini.</p>
 
-                    <div class="stat-card">
-                        <div class="stat-card__info">
-                            <span class="stat-card__label">Free Space</span>
-                            <strong class="stat-card__value">342.5 GB</strong>
-                        </div>
-                        <span class="stat-card__badge stat-card__badge--info">Accumulated</span>
-                    </div>
-                </div>
-
-                <!-- Section Form Eksekusi & Log Monitoring -->
-                <div class="content-grid">
-                    
-                    <!-- Form Kontrol Eksekusi Job -->
-                    <section class="panel">
-                        <h3 class="panel__title">Eksekusi Maintenance Window</h3>
-                        <form action="#" method="POST" class="cleaning-form">
-                            <div class="form-group">
-                                <label for="db_engine">Target Database Engine</label>
-                                <select id="db_engine" name="db_engine" class="form-input" required>
-                                    <option value="postgresql">PostgreSQL (Primary)</option>
-                                    <option value="mysql">MySQL / MariaDB</option>
-                                    <option value="sqlserver">SQL Server</option>
-                                    <option value="mongodb">MongoDB</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="tgl_eksekusi">Jadwal Maintenance Window</label>
-                                <input type="date" id="tgl_eksekusi" name="tgl_eksekusi" class="form-input" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label>Scope &amp; Operations Strategy</label>
-                                <div class="radio-group">
-                                    <label class="radio-label">
-                                        <input type="radio" name="skala_paket" value="small" checked> Deduplication &amp; Index Rebuild (< 50 GB)
-                                    </label>
-                                    <label class="radio-label">
-                                        <input type="radio" name="skala_paket" value="medium"> Partitioning &amp; Vacuuming (50 - 500 GB)
-                                    </label>
-                                    <label class="radio-label">
-                                        <input type="radio" name="skala_paket" value="enterprise"> Cluster Optimization (> 500 GB)
-                                    </label>
-                                </div>
-                            </div>
-
-                            <button type="submit" class="btn-primary">Jadwalkan Cleaning Job</button>
-                        </form>
-                    </section>
-
-                    <!-- Table Audit / Scope Breakdown -->
-                    <section class="panel">
-                        <h3 class="panel__title">Audit Log &amp; Scope Reference</h3>
-                        <div class="table-wrapper">
-                            <table class="data-table">
-                                <thead>
-                                    <tr>
-                                        <th>Target Size</th>
-                                        <th>Cakupan Operasi</th>
-                                        <th>Estimasi SLA</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>&lt; 50 GB</td>
-                                        <td>Deduplication &amp; Index Rebuild</td>
-                                        <td>&lt; 2 Jam</td>
-                                    </tr>
-                                    <tr>
-                                        <td>50 - 500 GB</td>
-                                        <td>Partitioning, Vacuuming &amp; Orphan Cleanup</td>
-                                        <td>2 - 6 Jam</td>
-                                    </tr>
-                                    <tr>
-                                        <td>&gt; 500 GB</td>
-                                        <td>Cluster Optimization &amp; Purging Strategy</td>
-                                        <td>Window Maintenance</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </section>
-
-                </div>
-            </main>
-
+      <form action="#" method="post">
+        
+        <div>
+          <label for="nama">Nama Lengkap:</label><br>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
         </div>
-    </div>
+        <br>
+
+        <div>
+          <label for="email">Alamat Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="nama@domain.com" required>
+        </div>
+        <br>
+
+        <div>
+          <label for="tanggal_hubungi">Rencana Tanggal Diskusi:</label><br>
+          <input type="date" id="tanggal_hubungi" name="tanggal_hubungi">
+        </div>
+        <br>
+
+        <div>
+          <label for="warna_favorit">Pilih Warna Tema Diskusi:</label><br>
+          <input type="color" id="warna_favorit" name="warna_favorit" value="#2b579a">
+        </div>
+        <br>
+
+        <div>
+          <label for="prioritas">Tingkat Urgensi Pesan (1 - 5):</label><br>
+          <input type="range" id="prioritas" name="prioritas" min="1" max="5" value="3">
+        </div>
+        <br>
+
+        <div>
+          <label for="pesan">Pesan Singkat:</label><br>
+          <textarea id="pesan" name="pesan" rows="4" cols="40" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+        </div>
+        <br>
+
+        <div>
+          <button type="submit">Kirim Pesan</button>
+        </div>
+
+      </form>
+    </section>
+
+    <aside>
+      <h3>Status Akademik</h3>
+      <p>Program Studi: S1 Ilmu Komputer Universitas Negeri Medan</p>
+      <p>Status: Mahasiswa Aktif (Fase Pembentukan Skill Dasar)</p>
+    </aside>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Umar Hidayat.</p>
+  </footer>
 
 </body>
 </html>
